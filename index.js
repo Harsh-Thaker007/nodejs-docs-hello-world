@@ -4,10 +4,7 @@ const port = process.env.PORT || 1337;
 // app.use(express.static("website"));
 
 app.get("/", (req, res) => {
-  //   res.sendFile(
-  //     path.join(__dirname.replace("controllers", "/website/index.html"))
-  //   );
-  res.send("Hello World");
+  res.send("Server Is Running");
 });
 
 app.listen(port, () => {
