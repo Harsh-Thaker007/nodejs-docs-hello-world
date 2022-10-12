@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
   res.send("Server Is Running");
 });
 
-app.get("file", (req, res) => {
+app.get("/index", (req, res) => {
   res.sendFile(path.join(__dirname + "/website/index.html"));
 });
 
