@@ -3,7 +3,7 @@ const app = express();
 const routes = require("./controllers/route");
 const port = process.env.PORT || 1337;
 app.use("/", routes);
-app.use("/", express.static(__dirname + "/"));
+app.use(express.static("website"));
 
 app.listen(port, () => {
   console.log(`http://localhost:${port}/`);
