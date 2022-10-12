@@ -10,6 +10,10 @@ const port = process.env.PORT || 1337;
 
 // console.log("Server running at http://localhost:%d", port);
 
+app.get("/", (req,res) => {
+  res.send("Welcome to the server");
+});
+
 app.listen(port, () => {
   console.log(`http://localhost:${port}/`);
   console.log("Server Started");
